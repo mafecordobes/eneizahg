@@ -1,0 +1,91 @@
+.menu-home{
+    .menu-home-izq-container {
+        padding-top: 70px;
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+                padding-bottom: 20px;;
+                a {
+                    color: $dark_grey;
+                    font-size: 1.15em;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: 1.15em;
+    }
+
+    .social-media {
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        font-size: 30px;
+        padding-top: 10px;
+
+        .fb {
+            padding-right: 15px;
+            i {
+                color: $facebook; 
+            }
+            
+        }
+
+        .ld {
+            padding-right: 15px;
+            i {
+                color: $linkedin; 
+            }
+        }
+
+        .tw {
+            padding-right: 15px;
+            i {
+                color: $twitter;
+            }
+        }
+    }
+}
+
+.centro {
+    padding-top: 25px;
+    .logo {
+        max-width: 200px;
+        padding-bottom: 10px;
+        width: 43%;
+    }
+
+    .desierto {
+        max-width: 82%;
+    }
+}
+
+.pensamiento-home {
+    margin-top: 26%;
+    padding-left: 0;
+    p {
+        font-weight: 600;
+        line-height: 1.3;
+        font-size: 1em; 
+        color: $black; 
+    }
+}
+
+.cv-home {
+    padding-top: 5%;
+    text-align: left;
+    padding-left:9%;
+
+    .cv_foto {
+        width: 26%;
+    }
+    .cv_title {
+        width: 50%;
+        padding-top: 10%;
+        padding-left: 7%;
+    }
+} 

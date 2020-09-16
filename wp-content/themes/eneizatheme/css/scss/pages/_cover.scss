@@ -1,0 +1,94 @@
+.cover-page {
+    padding-top: 20px;
+    .desierto, .cv_title, .cv_foto {
+        max-width: 100%;
+    }
+    img.logo {
+        width: 50%;
+        padding-bottom: 15px;
+    }
+
+    .cv {
+        text-align: left;
+        .cv_foto {
+            width: 50%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .cv_title {
+            width: 60%;
+        }
+    }
+
+    .pensamiento {
+        text-align: left;
+        padding-top: 10px;
+        font-size: 0.95em;
+        font-weight: 600;
+        color: $black;
+    }
+
+    .menu {
+        padding-left: 50px;
+
+        h3 {
+            font-weight: bold;
+            color: $title_black;
+            font-size: 2.15em;
+            margin-bottom: 10px;
+            line-height: 1.4;
+
+            a {
+                text-decoration: none;
+                color: $title_black;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            li {
+                padding-bottom: 5px;
+                &.no-view > a {
+                    display: none;
+                }
+            }
+            a {
+                color: #909090;
+                font-size: 1.4em;
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+            ul.sub-menu {
+                padding-top: 10px;
+                li {
+                    padding-bottom: 10px;
+                    padding-left: 25px;
+                    a {
+                        font-weight: 500;
+                        font-size: 1.25em;
+                        
+                    }
+                }
+            }
+            
+        }
+
+        
+
+        &.np {
+            padding-top: 21%; 
+        }
+
+        &.cc, &.sv {
+            padding-top: 11%;
+        }
+
+        &.tce {
+            padding-top: 7%;
+        }
+
+    }
+}

@@ -1,0 +1,117 @@
+.pensamiento-home {
+    margin-top: 30px;
+    padding-left: 20%;
+}
+
+.menu-top {
+    display: none;
+}
+
+.menu-responsive {
+    display: block;
+    position: absolute;
+    right: 10%;
+    font-size: 25px;
+    color: $light_grey;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+#responsive-menu {
+    display: block;
+}
+
+footer {
+    width: 100%;
+    .copyright {
+        .container.logo-todd {
+            display: inline-block;
+            text-align: center;
+
+            p {
+                margin-top: 5px;
+                padding-left: 0;
+            }
+        }
+    }
+
+    a#back_to_top {
+        position: unset;
+        display: inline-block;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+}
+
+.homepage, .cover-page {
+    margin-left: 0; 
+    margin-right: 0;
+}
+
+.cover-page {
+    .cv, .pensamiento {
+        display: none; 
+    }
+
+    .menu {
+        padding-left: 20px;
+        padding-top: 0 !important;
+    }
+    
+} 
+
+.cintillo {
+    .logo {
+        text-align: center;
+        img {
+            display: inline-block;
+            width: 40%;
+        }
+        .desert-cintillo {
+            display: none;
+        }
+    }
+}
+
+.menu-left {
+    display: none;
+}
+
+.text-page {
+    .content {
+        padding-top: 0;
+    }
+
+    .title {
+        font-size: 2em;
+        line-height: normal;
+        margin-top: 5px;
+    }
+
+    .subtitle {
+        margin-top: 5px;
+        font-size: 1.8em;
+        line-height: normal;
+    }
+
+    .content .content-wysiwyg h3, .section_title {
+        font-size: 2.1em;
+        margin-bottom: 5px;
+        line-height: normal;
+        margin-top: 5px;
+    }
+    
+}
+
+.protagonista-principal {
+    .photo .foto_principal {
+        width: 60%;
+        height: auto;
+    }
+}
+
+.all-protagonistas .prot {
+    height: auto;
+    padding: 20px;
+}

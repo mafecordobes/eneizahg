@@ -1,0 +1,59 @@
+.wpcf7-form {
+    label {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        border-width: 0 0 1px 0;
+        padding: 10px 0 10px 5px;
+        resize: none;
+        font-weight: 400;
+
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+
+    input.wpcf7-form-control.wpcf7-submit {
+        width: auto;
+        border: none;
+        color: $white;
+        background: $black;
+        padding: 8px 20px;
+    }
+}
+
+.social-contact {
+    padding-left: 0;
+    margin-top: 40px;
+    list-style: none;
+
+    li {
+        padding-bottom: 20px;
+        a {
+            text-decoration: none;
+            color: $black;
+            font-size: 1em;
+            font-weight: 600;
+
+            i {
+                width: 30px;
+                font-size: 25px;
+                text-align: center;
+                margin-right: 30px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.text-page .contact {
+    
+    padding-top: 10px;
+    
+    .subtitle {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}

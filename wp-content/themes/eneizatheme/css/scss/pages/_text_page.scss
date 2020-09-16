@@ -1,0 +1,99 @@
+.text-page {
+    .content {
+        padding-top: 20px;
+        padding-left: 35px;
+
+        .content-wysiwyg {
+            color: $black; 
+            margin-top: 15px;
+            text-align: justify;
+
+            p {
+                line-height: 1.45;
+                font-size: 1.15em;
+                margin-bottom: 15px; 
+            }
+    
+            ul li {
+                font-size: 1.15em;
+                line-height: 1.3;
+                margin-bottom: 5px;
+                margin-left: 2%;
+                padding-left: 2%;
+                padding-right: 12%;
+            }
+
+            ol {
+                margin-bottom: 15px;
+                li {
+                    font-size: 1.15em;
+                    line-height: 1.3;
+                    margin-bottom: 5px;
+                    margin-left: 2%;
+                    padding-left: 2%;
+                    padding-right: 12%;
+                }
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 3%;
+            }
+
+            h3 {
+                font-weight: bold;
+                color: $title_black;
+                font-size: 3.4em;
+                margin-bottom: 20px;
+                margin-top: 25px;
+            }
+
+            a {
+                color: $black; 
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .title {
+        font-weight: bold;
+        color: $title_black;
+        font-size: 2.7em;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+
+    .subtitle {
+        margin-top: 15px;
+        font-weight: bold;
+        color: $subtitle_grey;
+        font-size: 2.7em;
+        line-height: 1.2;
+    }
+
+    .section_title {
+        font-weight: bold;
+        color: $title_black;
+        font-size: 3.4em;
+        margin-bottom: 20px;
+    }
+
+    img.img-responsive.imagen.cv {
+        width: 27% 
+    }
+
+}
+
+.page-id-100 {
+    .text-page {
+        .content {
+            .content-wysiwyg {
+                ul {
+                    list-style: lower-alpha;
+                }
+            }
+        }
+    }
+}
