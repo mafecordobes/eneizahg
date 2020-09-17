@@ -115,3 +115,23 @@ footer {
     height: auto;
     padding: 20px;
 }
+
+.single-protagonista {
+    h3.title {
+        font-size: 3em;
+    }
+
+    .principal{
+        .foto-content {
+            text-align: center;
+
+            img.foto {
+                width: 50%;
+            }
+        }
+    }
+}
+
+#commentform p.form-submit {
+    text-align: center;
+}

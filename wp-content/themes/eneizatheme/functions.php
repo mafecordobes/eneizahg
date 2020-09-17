@@ -32,13 +32,18 @@ function create_post_type() {
     register_post_type( 'protagonista',
         array(
             'labels' => array(
-            'name' => __( 'Protagonistas' ),
-            'singular_name' => __( 'Protagonista' ),
-        ),
+                'name' => __( 'Protagonistas' ),
+                'singular_name' => __( 'Protagonista' ),
+            ),
             'public' => true,
             'has_archive' => true,
-            'menu_icon' => 'dashicons-universal-access-alt'
+            'menu_icon' => 'dashicons-universal-access-alt',
+            'supports' => array(
+                'title',
+                'thumbnail',
+                'comments',
+                'editor'
+            )
         )
     );
 }
- 

@@ -24,6 +24,91 @@ div#content {
   display: none;
 }
 
+/*Comments*/
+h3#comments {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2%;
+  color: #756E6C;
+}
+
+ol.commentlist .comment-meta.commentmetadata a {
+  color: #756E6C;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+ol.commentlist .comment-author.vcard {
+  margin-top: 20px;
+}
+ol.commentlist .comment-author.vcard .fn {
+  font-weight: 900;
+  color: #000000;
+}
+ol.commentlist .comment-author.vcard .fn a {
+  color: #000000;
+}
+ol.commentlist .reply a {
+  color: #756E6C;
+  font-weight: 700;
+}
+ol.commentlist p {
+  margin-top: 6px;
+  font-size: 1.1em;
+}
+
+p.logged-in-as a {
+  color: #756E6C;
+}
+
+p.comment-form-comment label {
+  display: none;
+}
+
+h3#reply-title {
+  color: #756E6C;
+}
+h3#reply-title a {
+  color: #000000;
+}
+
+#commentform textarea#comment {
+  width: 100%;
+}
+#commentform p.form-submit {
+  text-align: right;
+}
+#commentform input#submit {
+  background: #000000;
+  border: none;
+  color: #ffffff;
+  padding: 12px 40px;
+}
+#commentform p.comment-form-author label, #commentform p.comment-form-author input, #commentform p.comment-form-email label, #commentform p.comment-form-email input, #commentform p.comment-form-url label, #commentform p.comment-form-url input {
+  width: 100%;
+}
+#commentform p.comment-form-author input, #commentform p.comment-form-email input, #commentform p.comment-form-url input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #756E6C;
+}
+#commentform p.comment-form-author input:focus, #commentform p.comment-form-author input:active, #commentform p.comment-form-email input:focus, #commentform p.comment-form-email input:active, #commentform p.comment-form-url input:focus, #commentform p.comment-form-url input:active {
+  outline: none;
+}
+
+hr.line-heavy-comment {
+  margin-bottom: 0;
+  margin-top: 6px;
+  border-top: 4px solid #000000;
+}
+
+hr.line-light-comment {
+  margin-bottom: 2px;
+  border-top: 2px solid #000000;
+}
+
+/*End Comments*/
 .menu-top {
   transition: height 0.2s linear;
 }
@@ -603,6 +688,74 @@ div#content {
   padding: 14px;
 }
 
+.single-protagonista .cintillo {
+  padding-top: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.single-protagonista .cintillo .lines {
+  padding-left: 0;
+  padding-right: 0;
+}
+.single-protagonista .cintillo hr.line {
+  display: none;
+}
+.single-protagonista .cintillo hr.bold-line {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.single-protagonista hr.line-single-protagonista {
+  margin: 0;
+  border-top: 8px solid;
+}
+.single-protagonista h3.title {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 10px;
+  color: #756E6C;
+  font-weight: 400;
+}
+.single-protagonista .principal img.foto {
+  width: 100%;
+  margin-top: 20px;
+}
+.single-protagonista .principal .actividades {
+  margin-top: 20px;
+  padding-right: 10px;
+}
+.single-protagonista .principal .actividades .titulo {
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+}
+.single-protagonista .principal .actividades .tipo {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #756E6C;
+}
+.single-protagonista .principal .actividades .titulo-act {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.single-protagonista .principal .actividades .titulo-desc {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+.single-protagonista .principal .actividades p.fecha {
+  text-align: right;
+  font-weight: 900;
+}
+.single-protagonista .content {
+  font-size: 1.15em;
+  line-height: 1.45;
+  text-align: justify;
+  color: #000000;
+  margin-top: 3%;
+}
+
 footer {
   display: inline-block;
 }
@@ -763,6 +916,20 @@ footer a#back_to_top {
   .all-protagonistas .prot {
     height: auto;
     padding: 20px;
+  }
+
+  .single-protagonista h3.title {
+    font-size: 3em;
+  }
+  .single-protagonista .principal .foto-content {
+    text-align: center;
+  }
+  .single-protagonista .principal .foto-content img.foto {
+    width: 50%;
+  }
+
+  #commentform p.form-submit {
+    text-align: center;
   }
 }
 @media (max-width: 992px) {

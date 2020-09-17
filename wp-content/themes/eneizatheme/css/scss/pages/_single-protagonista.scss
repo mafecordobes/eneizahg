@@ -1,0 +1,85 @@
+.single-protagonista {
+    .cintillo {
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+
+        .lines {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        hr.line {
+            display: none;
+        }
+
+        hr.bold-line {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+    }
+
+    hr.line-single-protagonista {
+        margin: 0;
+        border-top: 8px solid;
+    }
+
+    h3.title {
+        text-align: center;
+        font-size: 4em;
+        margin-top: 10px;
+        color: $light_grey; 
+        font-weight: 400;
+    }
+
+    .principal {
+
+        img.foto {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .actividades {
+            margin-top: 20px;
+            padding-right: 10px;
+
+            .titulo {
+                font-size: 2.5em;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            .tipo {
+                font-style: italic;
+                font-weight: 600;
+                font-size: 1.3em;
+                color: $light_grey; 
+            }
+
+            .titulo-act {
+                font-size: 1.4em;
+                font-weight: 600;
+            }
+
+            .titulo-desc {
+                font-size: 1.35em;
+                font-weight: 400;
+            }
+
+            p.fecha {
+                text-align: right;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .content{
+        font-size: 1.15em;
+        line-height: 1.45;
+        text-align: justify;
+        color: $black;
+        margin-top: 3%;
+    }
+}

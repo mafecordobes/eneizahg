@@ -25,7 +25,7 @@
         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/foto.jpg';?>" class="img-responsive">
         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/name.jpg';?>" class="img-responsive">
     </div>
-    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="col-md-12 col-sm-12 col-xs-12 lines">
         <hr class="line" />
         <hr class="bold-line" />
     </div>

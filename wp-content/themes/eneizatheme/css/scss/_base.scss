@@ -22,3 +22,110 @@ div#content {
     z-index: 9002;
     display: none;
 }
+
+/*Comments*/
+
+h3#comments {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2%;
+    color: $light_grey;
+}
+
+ol.commentlist {
+    .comment-meta.commentmetadata a {
+        color: $light_grey;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .comment-author.vcard {
+        
+        margin-top: 20px;
+
+        .fn {
+            font-weight: 900;
+
+            color:$black;
+
+            a {
+                color:$black;
+            }
+        }
+    }
+
+    .reply a {
+        color: $light_grey;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: 6px;
+        font-size: 1.1em;
+    }
+
+}
+
+p.logged-in-as a {
+    color: $light_grey;
+}
+
+p.comment-form-comment label {
+    display: none;
+}
+
+h3#reply-title {
+    color: $light_grey;
+
+    a {
+        color: $black;
+    }
+}
+#commentform {
+    textarea#comment {
+        width: 100%;
+    }
+
+    p.form-submit {
+        text-align: right;
+    }
+
+    input#submit {
+        background: $black;
+        border: none;
+        color:$white;
+        padding: 12px 40px;
+    }
+
+    p.comment-form-author, p.comment-form-email, p.comment-form-url {
+        label, input {
+            width: 100%;
+        }
+
+        input {
+            
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid $light_grey;
+
+            &:focus, &:active {
+                outline: none;
+            }
+        }
+    }
+}
+
+hr.line-heavy-comment {
+    margin-bottom: 0;
+    margin-top: 6px;
+    border-top: 4px solid $black;
+}
+
+hr.line-light-comment {
+    margin-bottom: 2px;
+    border-top: 2px solid $black;
+}
+
+/*End Comments*/
