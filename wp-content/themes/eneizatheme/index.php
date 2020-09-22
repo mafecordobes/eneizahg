@@ -15,33 +15,40 @@
  */
 
 get_header();
+get_template_part( 'template-parts/menu', 'top' );
+get_template_part( 'template-parts/top', 'cintillo' );
+
+$caption = get_field('caption', 35);
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div class="row blog">
+		<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+			<div class="caption"><?php echo $caption; ?></div>
+			<hr class="line-single-blog" />
+		</div>
+		<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 list-post">
+			<?php
+			if ( have_posts() ) {
 
-		<?php
-		if ( have_posts() ) {
+				// Load posts loop.
+				while ( have_posts() ) {
+					the_post();
+					get_template_part( 'template-parts/content', 'posts' );
+					
+				}
+				echo '<div class="navigation">';
+					posts_nav_link('  ','&#10094; ','&#10095;');
+				echo '</div>';
 
-			// Load posts loop.
-			while ( have_posts() ) {
-				the_post();
-				get_template_part( 'template-parts/content/content' );
+			} else {
+
+				// If no content, include the "No posts found" template.
+				get_template_part( 'template-parts/content', 'none' );
+
 			}
-
-			// Previous/next page navigation.
-			//twentynineteen_the_posts_navigation();
-
-		} else {
-
-			// If no content, include the "No posts found" template.
-			get_template_part( 'template-parts/content/content', 'none' );
-
-		}
-		?>
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+			?>
+		</div>
+	</div>
 
 <?php
 get_footer();

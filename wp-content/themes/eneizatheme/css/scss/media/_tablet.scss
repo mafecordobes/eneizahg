@@ -135,3 +135,25 @@ footer {
 #commentform p.form-submit {
     text-align: center;
 }
+
+
+.blog .list-post .post {
+    padding: 20px;
+
+    img.img-post {
+        padding-bottom: 10px;
+    }
+}
+
+.single {
+    h3.title {
+        font-size: 3em;
+    }
+
+    .navigate-post {
+        .left, .right {
+            float: none;
+        }
+        text-align: center;
+    }
+}
