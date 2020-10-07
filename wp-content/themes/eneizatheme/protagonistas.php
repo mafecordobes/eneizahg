@@ -13,10 +13,13 @@ $descripcion_principal = get_field('descripcion_corta', $principal->ID);
 $descripcion_nombre_principal = get_field('descripcion_nombre', $principal->ID);
 $link_principal = get_permalink($principal->ID);
 
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
 $query = new WP_Query(array(
     'post_type' => 'protagonista',
     'post_status' => 'publish',
-    'posts_per_page' => -1,
+    'posts_per_page' => 3,
+    'paged' => $paged
 ));
 
 ?>
@@ -77,7 +80,7 @@ $query = new WP_Query(array(
 
     <div class="all-protagonistas col-md-12 col-sm-12 row">
         <?php 
-            while ($query->have_posts()):
+            while($query->have_posts()):
                 $query->the_post();
                 $post_id = get_the_ID();
                 if($post_id != $principal->ID):
@@ -108,12 +111,26 @@ $query = new WP_Query(array(
                     </div>
                 </div>
                 <?php endif;
-            endwhile; 
-        ?>
-    </div>
-
-    <div class="paginator col-md-12 col-sm-12">
-        <i class="fas fa-angle-left"></i><i class="fas fa-angle-right"></i>
+            endwhile; ?>
+            <div class="paginator col-md-12 col-sm-12">
+                <?php
+                $big = 999999999;
+                echo paginate_links( array(
+                    'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+                    'format' => '?paged=%#%',
+                    'current' => max( 1, get_query_var('paged') ),
+                    'total' => $query->max_num_pages,
+                    'prev_text' => '<i class="fas fa-angle-left"></i>',
+                    'next_text' => '<i class="fas fa-angle-right"></i>',
+                    'before_page_number' => '',
+                    'after_page_number'  => '',
+                    'show_all'           => false,
+                ) );
+                ?>
+            </div>
+            <?php wp_reset_postdata(); ?>
+              
+    
     </div>
     
 </div>

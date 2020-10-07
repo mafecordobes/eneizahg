@@ -32,7 +32,7 @@
         height: 330px;
     }
     p.name {
-        font-size: 1.8em;
+        font-size: 1.5em;
         font-weight: 900;
         padding-top: 6px;
     }
@@ -55,7 +55,7 @@
     .prot {
 
         height: 210px;
-        border-top: 1px solid $boder_grey;
+        border-bottom: 1px solid $boder_grey;
         border-left: 1px solid $boder_grey;
         border-right: 1px solid $boder_grey;
         
@@ -71,8 +71,8 @@
             }
         }
 
-        &:last-child {
-            border-bottom: 1px solid $boder_grey;
+        &:nth-child(1) {
+            border-top: 1px solid $boder_grey;
         }
 
         .dos {
@@ -98,10 +98,22 @@
 .paginator {
     text-align: center;
     padding-left: 10%;
+    position: relative;
 
     i {
         font-size: 23px;
         color: $light_grey;
-        padding: 14px;
+        padding: 14px 0px;
+        position: absolute;
+        &.fa-angle-left {
+            left: 45%;
+        }
+        &.fa-angle-right {
+            right: 45%;
+        }
+    }
+
+    a.page-numbers, span.page-numbers {
+        color: transparent;
     }
 }
