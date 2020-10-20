@@ -857,8 +857,7 @@ hr.line-light-comment {
   display: none;
 }
 .single .cintillo hr.bold-line {
-  margin-top: 15px;
-  margin-bottom: 0;
+  display: none;
 }
 .single hr.line-single-blog {
   margin: 0;
@@ -866,17 +865,45 @@ hr.line-light-comment {
 }
 .single h3.title {
   text-align: center;
-  font-size: 3.5em;
+  font-size: 4.5em;
   margin-top: 10px;
+  margin-bottom: 15px;
   color: #756E6C;
   font-weight: 400;
+}
+.single hr.line-bold-blog {
+  border-top: 3px solid #000000;
+  margin-bottom: 0;
+}
+.single .line-blog {
+  margin-top: 40px;
+}
+.single .line-blog span {
+  float: left;
+  font-size: 2.7em;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-right: 20px;
 }
 .single .content {
   margin-top: 30px;
   padding-left: 30px;
-  padding-right: 30px;
   color: #000000;
   text-align: justify;
+}
+.single .content .content-scroll {
+  max-height: 140vh;
+  overflow: hidden;
+  transition: max-height 2s linear 1s;
+}
+.single .content .content-scroll.showAll {
+  max-height: none !important;
+}
+.single .content .view-more-content {
+  margin: 24px 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
 }
 .single .content p {
   line-height: 1.45;
@@ -917,6 +944,34 @@ hr.line-light-comment {
 .single .content a {
   color: #000000;
   text-decoration: none;
+}
+.single .other-post {
+  margin-top: 30px;
+}
+.single .other-post .detail-others {
+  margin-bottom: 10px;
+}
+.single .other-post .detail-others p.titulo {
+  font-size: 2.3em;
+  line-height: normal;
+  padding-top: 0;
+  color: #756E6C;
+  margin-bottom: 3px;
+}
+.single .other-post .detail-others p.date {
+  margin: 0;
+  color: #000000;
+  font-size: 1.15em;
+}
+.single .other-post .detail-others p.excerpt {
+  color: #756E6C;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.single .other-post .detail-others a.view-more {
+  text-decoration: none;
+  color: black;
 }
 .single .navigate-post {
   padding-bottom: 10px;
@@ -1125,6 +1180,11 @@ footer a#back_to_top {
   }
   .single .navigate-post .left, .single .navigate-post .right {
     float: none;
+  }
+  .single .other-post {
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media (max-width: 992px) {

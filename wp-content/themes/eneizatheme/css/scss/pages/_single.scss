@@ -19,8 +19,7 @@
         }
 
         hr.bold-line {
-            margin-top: 15px;
-            margin-bottom: 0;
+            display: none;
         }
     }
 
@@ -31,18 +30,50 @@
 
     h3.title {
         text-align: center;
-        font-size: 3.5em;
+        font-size: 4.5em;
         margin-top: 10px;
+        margin-bottom: 15px;
         color: $light_grey; 
         font-weight: 400;
+    }
+
+    hr.line-bold-blog {
+        border-top: 3px solid $black;
+        margin-bottom: 0;
+    }
+
+    .line-blog {
+        margin-top: 40px;
+        span {
+            float: left;
+            font-size: 2.7em;
+            font-weight: 400;
+            margin-top: -10px;
+            margin-right: 20px;
+        }
     }
 
     .content {
         margin-top: 30px;
         padding-left: 30px;
-        padding-right: 30px;
         color: $black; 
         text-align: justify;
+
+        .content-scroll {
+            max-height: 140vh;
+            overflow: hidden;
+            transition: max-height 2s linear 1s;
+            &.showAll {
+                max-height: none !important;
+            }
+        }
+
+        .view-more-content {
+            margin: 24px 0;
+            font-size: 1.2em;
+            font-weight: 700;
+            cursor: pointer;
+        }
 
         p {
             line-height: 1.45;
@@ -88,6 +119,38 @@
         a {
             color: $black; 
             text-decoration: none;
+        }
+    }
+
+    .other-post {
+        margin-top: 30px;
+        .detail-others {
+            margin-bottom: 10px;
+            p.titulo {
+                font-size: 2.3em;
+                line-height: normal;
+                padding-top: 0;
+                color: $light_grey;
+                margin-bottom: 3px;
+            }
+
+            p.date {
+                margin: 0;
+                color: $black;
+                font-size: 1.15em;
+            }
+
+            p.excerpt {
+                color: $light_grey;
+                text-align: justify;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            a.view-more {
+                text-decoration: none;
+                color: black;
+            }
         }
     }
 

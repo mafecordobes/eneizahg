@@ -36,5 +36,10 @@
         $('#responsive-menu').css('right', '-250px');
         $('#body_overlay').css('display', 'none');
     });
+
+    $(".view-more-content").click(function(){ 
+        $(".content-scroll").addClass("showAll"); 
+        $(".view-more-content").css("display","none");
+    });
     
 })(jQuery);
