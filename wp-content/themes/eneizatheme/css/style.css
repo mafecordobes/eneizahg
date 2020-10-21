@@ -599,6 +599,19 @@ hr.line-light-comment {
   color: #2e3131;
   font-weight: 400;
 }
+.cover-page .line-single-protagonistas {
+  margin: 0;
+  border-top: 4px solid;
+}
+.cover-page .line-single-protagonistas-bold {
+  margin: 0;
+  border-top: 8px solid;
+}
+.cover-page h3.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 3.2em;
+}
 
 .description-protagonista {
   text-align: justify;
@@ -606,17 +619,15 @@ hr.line-light-comment {
 }
 
 .div-protagonista {
-  border-top: 3px solid;
-  border-bottom: 6px solid;
-  margin: 30px 6%;
-  padding: 15px 25px;
+  padding: 15px 0;
+  font-size: 1.1em;
 }
 
 .protagonista-principal a {
   color: #2e3131;
 }
 .protagonista-principal .photo {
-  text-align: center;
+  height: 380px;
 }
 .protagonista-principal .foto_principal {
   width: auto;
@@ -624,44 +635,46 @@ hr.line-light-comment {
 }
 .protagonista-principal p.name {
   font-size: 1.5em;
-  font-weight: 900;
+  font-weight: 400;
   padding-top: 6px;
 }
 .protagonista-principal .content {
-  height: 295px;
-  border-left: 3px solid;
-  margin-top: 15px;
-  padding-top: 5px;
-  padding-right: 60px;
+  padding: 30px;
   text-align: justify;
   font-size: 1.23em;
+  border-left: 1px solid;
+  height: 330px;
 }
 .protagonista-principal p.titulo {
   font-weight: 900;
 }
 
 .all-protagonistas {
-  margin: 30px 6%;
+  margin: 30px 16%;
+  padding-right: 3%;
 }
 .all-protagonistas .prot {
-  height: 210px;
-  border-bottom: 1px solid #D0D0D0;
-  border-left: 1px solid #D0D0D0;
-  border-right: 1px solid #D0D0D0;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+.all-protagonistas .prot a {
+  color: #000000;
 }
 .all-protagonistas .prot img.foto {
-  width: 100%;
+  width: 85%;
+  padding-top: 19px;
 }
 .all-protagonistas .prot .uno {
-  padding-top: 24px;
-  text-align: center;
+  padding-top: 0;
+  padding-left: 0;
 }
 .all-protagonistas .prot .uno p.name {
   font-weight: 900;
   margin-top: 4px;
 }
 .all-protagonistas .prot:nth-child(1) {
-  border-top: 1px solid #D0D0D0;
+  border-top: 1px solid;
 }
 .all-protagonistas .prot .dos {
   padding-top: 24px;
@@ -699,6 +712,24 @@ hr.line-light-comment {
   color: transparent;
 }
 
+.page-template-protagonistas .cintillo {
+  padding-top: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.page-template-protagonistas .cintillo .lines {
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-template-protagonistas .cintillo hr.line {
+  display: none;
+}
+.page-template-protagonistas .cintillo hr.bold-line {
+  display: none;
+}
+
 .single-protagonista .menu-top #menu-main li#menu-item-46 a {
   font-weight: 600;
 }
@@ -723,9 +754,19 @@ hr.line-light-comment {
   margin-top: 15px;
   margin-bottom: 0;
 }
-.single-protagonista hr.line-single-protagonista {
+.single-protagonista .line-single-protagonistas {
+  margin: 0;
+  border-top: 4px solid;
+  margin-top: 20px;
+}
+.single-protagonista .line-single-protagonistas-bold {
   margin: 0;
   border-top: 8px solid;
+}
+.single-protagonista h3.title-prot {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 3.2em;
 }
 .single-protagonista h3.title {
   text-align: center;
@@ -735,35 +776,42 @@ hr.line-light-comment {
   font-weight: 400;
 }
 .single-protagonista .principal img.foto {
-  width: 100%;
+  width: auto;
   margin-top: 20px;
+  height: 280px;
+}
+.single-protagonista .principal .titulo-content h4 {
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.4;
 }
 .single-protagonista .principal .actividades {
-  margin-top: 20px;
   padding-right: 10px;
 }
 .single-protagonista .principal .actividades .titulo {
-  font-size: 1.85em;
-  font-weight: 500;
-  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 .single-protagonista .principal .actividades .tipo {
-  font-style: italic;
-  font-weight: 600;
-  font-size: 1.3em;
-  color: #756E6C;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-bottom: 0;
 }
 .single-protagonista .principal .actividades .titulo-act {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
 }
 .single-protagonista .principal .actividades .titulo-desc {
-  font-size: 1.35em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 .single-protagonista .principal .actividades p.fecha {
-  text-align: right;
-  font-weight: 900;
+  font-size: 1.2em;
+}
+.single-protagonista .principal .content-interna {
+  border-left: 1px solid;
+  height: 280px;
+  margin-top: 20px;
 }
 .single-protagonista .content {
   font-size: 1.15em;

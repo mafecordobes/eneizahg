@@ -29,9 +29,21 @@
         }
     }
 
-    hr.line-single-protagonista {
+    .line-single-protagonistas {
+        margin: 0;
+        border-top: 4px solid;
+        margin-top: 20px;
+    }
+
+    .line-single-protagonistas-bold {
         margin: 0;
         border-top: 8px solid;
+    }
+
+    h3.title-prot {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 3.2em;
     }
 
     h3.title {
@@ -45,41 +57,50 @@
     .principal {
 
         img.foto {
-            width: 100%;
+            width: auto;
             margin-top: 20px;
+            height: 280px;
+        }
+
+        .titulo-content h4 {
+            text-transform: uppercase;
+            font-size: 2em;
+            line-height: 1.4;
         }
 
         .actividades {
-            margin-top: 20px;
             padding-right: 10px;
 
             .titulo {
-                font-size: 1.85em;
-                font-weight: 500;
-                text-align: center;
+                font-size: 1.2em;
+                font-weight: 400;
             }
 
             .tipo {
-                font-style: italic;
-                font-weight: 600;
-                font-size: 1.3em;
-                color: $light_grey; 
+                font-weight: 400;
+                font-size: 1.2em;
+                margin-bottom: 0;
             }
 
             .titulo-act {
-                font-size: 1.4em;
+                font-size: 1.2em;
                 font-weight: 600;
             }
 
             .titulo-desc {
-                font-size: 1.35em;
+                font-size: 1.2em;
                 font-weight: 400;
             }
 
             p.fecha {
-                text-align: right;
-                font-weight: 900;
+                font-size: 1.2em;
             }
+        }
+
+        .content-interna {
+            border-left: 1px solid;
+            height: 280px;
+            margin-top: 20px;
         }
     }
 

@@ -25,18 +25,25 @@ $trabajos = get_field('trabajos_realizados');
 ?>
 <div class="row single-protagonista">
     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-        <h3 class="title"><?php echo get_the_title(); ?></h3>
-        <hr class="line-single-protagonista" />
+        <hr class="line-single-protagonistas" />
+        <h3 class="title-prot">Protagonistas</h3>
+        <hr class="line-single-protagonistas-bold" />
     </div>
     <div class="principal">
-        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 foto-content">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 titulo-content">
+            <h4>
+                <?php echo get_the_title(); ?> <br/> 
+                (<?php echo $nacimiento; ?> - <?php echo ($muerte != "") ? $muerte : "";  ?>)   
+            </h4>
+        </div>
+        <div class="col-md-5 col-lg-5 col-sm-4 col-xs-12 foto-content">
             <img src="<?php echo $foto; ?>" class="foto"/>
         </div>
-        <div class="col-md-9 col-lg-9 col-sm-8 col-xs-12">
+        <div class="col-md-6 col-lg-6 col-sm-8 col-xs-12 content-interna">
             <div class="actividades">
                 <?php if($titulo_actividad != ""): ?>
-                    <p class="titulo">Actividades</p>
-                    <p class="tipo"><?php echo $tipo_actividad; ?></p>
+                    <p class="titulo">Actividades:</p>
+                    <p class="tipo"><?php echo $tipo_actividad; ?>:</p>
                     <p class="titulo-act"><?php echo $titulo_actividad; ?></p>
                     <p class="titulo-desc"><?php echo $descripcion_actividad; ?></p>
                     <?php if($fecha_definir):?>
