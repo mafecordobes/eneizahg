@@ -1290,7 +1290,11 @@ footer a#back_to_top {
     height: 250px;
   }
   .protagonista-principal .content {
-    height: 215px;
+    height: 250px;
+    padding-top: 0;
+  }
+  .protagonista-principal .photo {
+    height: auto;
   }
 }
 /*!
