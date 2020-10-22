@@ -1037,6 +1037,40 @@ hr.line-light-comment {
   float: right;
 }
 
+.biblioteca .line-single-biblioteca {
+  margin: 0;
+  border-top: 4px solid;
+}
+.biblioteca .line-single-biblioteca-bold {
+  margin: 0;
+  border-top: 8px solid;
+}
+.biblioteca h3.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 3.2em;
+}
+.biblioteca .description-biblioteca {
+  text-align: justify;
+  font-size: 1.2em;
+}
+.biblioteca .div-biblioteca {
+  padding: 15px 0;
+  font-size: 1.1em;
+}
+.biblioteca .div-biblioteca h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.biblioteca .div-biblioteca .lectura {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 3;
+}
+
 footer {
   display: inline-block;
 }
