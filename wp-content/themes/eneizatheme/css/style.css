@@ -109,6 +109,19 @@ hr.line-light-comment {
 }
 
 /*End Comments*/
+.modal-dialog {
+  width: 60vw;
+}
+
+.modal-body {
+  height: 100vh;
+}
+
+#showpdf {
+  height: 90vh;
+  margin: 0 auto;
+}
+
 .menu-top {
   transition: height 0.2s linear;
 }
@@ -1040,6 +1053,7 @@ hr.line-light-comment {
 .biblioteca .line-single-biblioteca {
   margin: 0;
   border-top: 4px solid;
+  margin-top: 20px;
 }
 .biblioteca .line-single-biblioteca-bold {
   margin: 0;
@@ -1069,6 +1083,19 @@ hr.line-light-comment {
   font-weight: bold;
   font-size: 1.3em;
   line-height: 3;
+}
+.biblioteca .menu.menu-biblioteca {
+  padding-top: 22%;
+}
+.biblioteca .menu.menu-biblioteca ul a {
+  color: #2e3131;
+  font-weight: 400;
+}
+.biblioteca .menu.menu-biblioteca h4 a {
+  color: #000000;
+}
+.biblioteca .menu.menu-biblioteca .contain-menu img {
+  height: 200px;
 }
 
 footer {

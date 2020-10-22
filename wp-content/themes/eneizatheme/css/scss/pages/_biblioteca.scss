@@ -2,6 +2,7 @@
     .line-single-biblioteca {
         margin: 0;
         border-top: 4px solid;
+        margin-top: 20px;
     }
 
     .line-single-biblioteca-bold {
@@ -34,6 +35,25 @@
             font-weight: bold;
             font-size: 1.3em;
             line-height: 3;
+        }
+    }
+
+    .menu.menu-biblioteca {
+        padding-top: 22%;
+    
+        ul a {
+            color: $dark_grey; 
+            font-weight: 400;
+        }
+
+        h4 {
+            a {
+                color: $black;
+            }
+        }
+
+        .contain-menu img {
+            height: 200px;
         }
     }
 
