@@ -148,7 +148,7 @@ hr.line-light-comment {
 .menu-top #menu-main li:hover > .sub-menu {
   display: block;
 }
-.menu-top #menu-main li.current-menu-ancestor {
+.menu-top #menu-main li.current-menu-ancestor, .menu-top #menu-main li.current-page-ancestor {
   font-weight: 600;
 }
 .menu-top #menu-main .sub-menu {
@@ -1096,6 +1096,51 @@ hr.line-light-comment {
 }
 .biblioteca .menu.menu-biblioteca .contain-menu img {
   height: 200px;
+}
+
+.biblioteca.sala .line-single-protagonistas {
+  border-top: 4px solid;
+}
+.biblioteca.sala .line-single-protagonistas-bold {
+  margin: 0;
+  border-top: 8px solid;
+}
+.biblioteca.sala h3.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 3.2em;
+}
+
+.description-sala {
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.div-sala {
+  padding: 15px 0;
+  font-size: 1.1em;
+}
+.div-sala h6 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.page-template-sala_lectura .cintillo {
+  padding-top: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.page-template-sala_lectura .cintillo .lines {
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-template-sala_lectura .cintillo hr.line {
+  display: none;
+}
+.page-template-sala_lectura .cintillo hr.bold-line {
+  display: none;
 }
 
 footer {

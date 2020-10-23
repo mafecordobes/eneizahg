@@ -23,7 +23,7 @@
                 display: block;
             }
 
-            &.current-menu-ancestor {
+            &.current-menu-ancestor, &.current-page-ancestor {
                 font-weight: 600;
             }
         }

@@ -1,0 +1,56 @@
+.biblioteca.sala {
+
+    .line-single-protagonistas {
+        border-top: 4px solid;
+    }
+
+    .line-single-protagonistas-bold {
+        margin: 0;
+        border-top: 8px solid;
+    }
+
+    h3.title {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 3.2em;
+    }
+
+}
+
+.description-sala {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.div-sala {
+    padding: 15px 0;
+    font-size: 1.1em;
+
+    h6 {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+}
+
+.page-template-sala_lectura {
+    .cintillo {
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+
+        .lines {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        hr.line {
+            display: none;
+        }
+
+        hr.bold-line {
+            display: none;
+        }
+    }
+}

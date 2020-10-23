@@ -43,7 +43,7 @@ $descripcion = get_field('descripcion');
            <a data-toggle="modal" data-target="#materialDelDia"><img src="<?php echo $imagen; ?>"></h4></a>
            <h4><a href="#">Actividades especiales</a></h4>
            <h4><a href="#">Te puede interesar</a></h4>
-           <h4><a href="#">Sala de Lectura</a></h4>
+           <h4><a href="/sala-de-lectura">Sala de Lectura</a></h4>
            <h4><a href="#">Nuestras condiciones</a></h4>
            
        </div>
@@ -57,7 +57,7 @@ $descripcion = get_field('descripcion');
     <div class="col-md-12 col-sm-12 description-biblioteca">
         <div class="div-biblioteca">
             <?php echo $descripcion; ?> 
-            <a class="lectura">Sala de Lectura</a>
+            <a href="/sala-de-lectura" class="lectura">Sala de Lectura</a>
         </div>
     </div>
     
