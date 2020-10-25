@@ -1,0 +1,118 @@
+.single-libro {
+    .menu-top #menu-main li#menu-item-48 a{
+        font-weight: 600;
+    }
+    
+    .menu-top #menu-main li#menu-item-47 a{
+        font-weight: 400 !important;
+    }
+
+    .cintillo {
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+
+        .lines {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        hr.line {
+            display: none;
+        }
+
+        hr.bold-line {
+            margin-top: 15px;
+            margin-bottom: 0;
+            display: block;
+        }
+    }
+
+    .description {
+        padding-left: 0;
+        text-align: justify;
+        .img {
+            text-align: left;
+            img{
+                max-width: 100%;
+                padding-top: 23px;
+            }
+        } 
+
+        .titulo {
+            white-space: pre-line;
+            color: $black;
+            font-size: 1.2em;
+            font-weight: bold;
+            a {
+                color: $black;
+            }
+        }
+    }
+
+    .main-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .presentacion h4 {
+        font-weight: bold;
+        text-align: justify;
+        margin-top: 40px;
+    }
+
+    .relacionados {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        text-align: left;
+        .portada img {
+            max-width: 100%;
+            max-height: 200px;
+        }
+        .relacionado-1 {
+            a {
+                color: $black;
+            }
+            border: 1px solid;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .relacionado-2 {
+            a {
+                color: $black;
+            }
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            border-right: 1px solid;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .comments {
+        margin-top: 20px;
+    }
+
+    ul.menu-libro {
+        list-style: none;
+        padding-left: 0;
+        padding-top: 20px;
+        font-size: 1.2em;
+
+        li {
+            font-weight: bold;
+            padding-bottom: 20px;
+            a {
+                color: $black;
+                text-decoration: none;
+            }
+            &.busquedas {
+                padding-left: 10px;
+                font-weight: 400 !important;
+            }
+        }
+    }
+}

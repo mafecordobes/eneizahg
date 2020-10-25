@@ -163,3 +163,16 @@ footer {
         padding-right: 30px;
     }
 }
+
+.biblioteca.sala {
+    .temas {
+        .book-lectura {
+            border-bottom: 1px solid;
+            border-left: 1px solid !important;
+            border-right: 1px solid;
+            &:nth-child(3), &:nth-child(2) {
+                border-top: none;
+            } 
+        }
+    }
+}

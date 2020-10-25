@@ -41,5 +41,13 @@
         $(".content-scroll").addClass("showAll"); 
         $(".view-more-content").css("display","none");
     });
+
+    $("#button-to-conditions").click(function(){
+        $('html, body').animate({
+        scrollTop: $('#nuestras-condiciones').offset().top - 50
+        }, 800)
+    });
+
+   // $('#datosContacto').modal('show');
     
 })(jQuery);

@@ -65,6 +65,24 @@ function create_post_type() {
             )
         )
     );
+
+    register_post_type( 'autor',
+        array(
+            'labels' => array(
+                'name' => __( 'Autores' ),
+                'singular_name' => __( 'Autor' ),
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'menu_icon' => 'dashicons-universal-access',
+            'supports' => array(
+                'title',
+                'thumbnail',
+                'comments',
+                'editor'
+            )
+        )
+    );
 }
 
 /* Taxonomias */
@@ -145,4 +163,24 @@ function create_book_taxonomies() {
         'query_var'     => true,
         'rewrite'       => array( 'slug' => 'accesos' ),
     ));
+}
+
+add_action('admin_post_nopriv_contact-data', 'register_read_space');
+add_action('admin_post_contact-data', 'register_read_space');
+
+function register_read_space(){
+
+	$nombre     = sanitize_text_field( $_POST['contact-data-name'] );
+    $correo    = sanitize_text_field( $_POST['contact-data-email'] );
+
+    global $wpdb;
+    $wpdb->insert('users_sala_lectura', array(
+        'name' => $nombre,
+        'mail' => $correo,
+    ));
+
+    wp_redirect( get_home_url() . '/biblioteca/sala-de-lectura/?modal=0'); 
+
+    exit;
+
 }

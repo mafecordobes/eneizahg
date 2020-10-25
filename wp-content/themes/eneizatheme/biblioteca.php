@@ -6,6 +6,8 @@ $menu = get_field('menu');
 $imagen = get_field('material_de_la_semana_imagen');
 $file = get_field('material_de_la_semana_documento');
 $descripcion = get_field('descripcion');
+$actividades = get_field('actividades_especiales');
+$interesar = get_field('te_puede_interesar');
 
 ?>
 
@@ -38,13 +40,14 @@ $descripcion = get_field('descripcion');
    </div>
    <div class="col-md-5 col-sm-5 menu menu-biblioteca">
        <div class="contain-menu">
-           <h4><a href="#">Menú Principal</a></h4>
            <h4><a data-toggle="modal" data-target="#materialDelDia">Material de la semana</a></h4>
            <a data-toggle="modal" data-target="#materialDelDia"><img src="<?php echo $imagen; ?>"></h4></a>
-           <h4><a href="#">Actividades especiales</a></h4>
-           <h4><a href="#">Te puede interesar</a></h4>
+           <h4>Actividades especiales</h4>
+           <p><?php echo $actividades; ?></p>
+           <h4>Te puede interesar</h4>
+           <p><?php echo $interesar; ?></p>
            <h4><a href="/sala-de-lectura">Sala de Lectura</a></h4>
-           <h4><a href="#">Nuestras condiciones</a></h4>
+           <h4><a id="button-to-conditions">Nuestras condiciones</a></h4>
            
        </div>
    </div>

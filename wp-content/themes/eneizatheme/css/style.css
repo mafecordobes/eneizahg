@@ -109,15 +109,13 @@ hr.line-light-comment {
 }
 
 /*End Comments*/
-.modal-dialog {
+#materialDelDia .modal-dialog {
   width: 60vw;
 }
-
-.modal-body {
+#materialDelDia .modal-body {
   height: 100vh;
 }
-
-#showpdf {
+#materialDelDia #showpdf {
   height: 90vh;
   margin: 0 auto;
 }
@@ -1110,6 +1108,71 @@ hr.line-light-comment {
   margin-bottom: 16px;
   font-size: 3.2em;
 }
+.biblioteca.sala .publicacion {
+  min-height: 225px;
+}
+.biblioteca.sala .publicacion h4 {
+  text-align: center;
+}
+.biblioteca.sala .publicacion a {
+  color: #000000;
+  text-decoration: none;
+}
+.biblioteca.sala .publicacion img {
+  max-width: 100%;
+  padding-top: 10px;
+}
+.biblioteca.sala .publicacion .content {
+  min-height: 185px;
+  border-left: 1px solid;
+  padding-top: 10px;
+  padding-right: 0;
+}
+.biblioteca.sala .menu-sala {
+  list-style: none;
+  padding-top: 40px;
+}
+.biblioteca.sala .menu-sala a {
+  color: #000000;
+  text-decoration: none;
+}
+.biblioteca.sala .menu-sala li {
+  font-weight: bold;
+}
+.biblioteca.sala .menu-sala li.busquedas {
+  font-weight: 400 !important;
+  padding-left: 20px;
+}
+.biblioteca.sala .div-temas {
+  margin-top: 20px;
+}
+.biblioteca.sala .temas {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.biblioteca.sala .temas .book-lectura {
+  display: flex;
+  min-height: 225px;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+.biblioteca.sala .temas .book-lectura a {
+  color: #000000;
+}
+.biblioteca.sala .temas .book-lectura:nth-child(1), .biblioteca.sala .temas .book-lectura:nth-child(2), .biblioteca.sala .temas .book-lectura:nth-child(3) {
+  border-top: 1px solid;
+}
+.biblioteca.sala .temas .book-lectura.col-1, .biblioteca.sala .temas .book-lectura.col-2 {
+  border-left: 1px solid;
+}
+.biblioteca.sala .temas .book-lectura.col-3 {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+.biblioteca.sala .temas .portada img {
+  max-width: 100%;
+}
 
 .description-sala {
   text-align: justify;
@@ -1141,6 +1204,110 @@ hr.line-light-comment {
 }
 .page-template-sala_lectura .cintillo hr.bold-line {
   display: none;
+}
+
+.single-libro .menu-top #menu-main li#menu-item-48 a {
+  font-weight: 600;
+}
+.single-libro .menu-top #menu-main li#menu-item-47 a {
+  font-weight: 400 !important;
+}
+.single-libro .cintillo {
+  padding-top: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.single-libro .cintillo .lines {
+  padding-left: 0;
+  padding-right: 0;
+}
+.single-libro .cintillo hr.line {
+  display: none;
+}
+.single-libro .cintillo hr.bold-line {
+  margin-top: 15px;
+  margin-bottom: 0;
+  display: block;
+}
+.single-libro .description {
+  padding-left: 0;
+  text-align: justify;
+}
+.single-libro .description .img {
+  text-align: left;
+}
+.single-libro .description .img img {
+  max-width: 100%;
+  padding-top: 23px;
+}
+.single-libro .description .titulo {
+  white-space: pre-line;
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.single-libro .description .titulo a {
+  color: #000000;
+}
+.single-libro .main-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.single-libro .presentacion h4 {
+  font-weight: bold;
+  text-align: justify;
+  margin-top: 40px;
+}
+.single-libro .relacionados {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: left;
+}
+.single-libro .relacionados .portada img {
+  max-width: 100%;
+  max-height: 200px;
+}
+.single-libro .relacionados .relacionado-1 {
+  border: 1px solid;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.single-libro .relacionados .relacionado-1 a {
+  color: #000000;
+}
+.single-libro .relacionados .relacionado-2 {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.single-libro .relacionados .relacionado-2 a {
+  color: #000000;
+}
+.single-libro .comments {
+  margin-top: 20px;
+}
+.single-libro ul.menu-libro {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+.single-libro ul.menu-libro li {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.single-libro ul.menu-libro li a {
+  color: #000000;
+  text-decoration: none;
+}
+.single-libro ul.menu-libro li.busquedas {
+  padding-left: 10px;
+  font-weight: 400 !important;
 }
 
 footer {
@@ -1340,6 +1507,15 @@ footer a#back_to_top {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .biblioteca.sala .temas .book-lectura {
+    border-bottom: 1px solid;
+    border-left: 1px solid !important;
+    border-right: 1px solid;
+  }
+  .biblioteca.sala .temas .book-lectura:nth-child(3), .biblioteca.sala .temas .book-lectura:nth-child(2) {
+    border-top: none;
+  }
 }
 @media (max-width: 992px) {
   body {
@@ -1369,6 +1545,30 @@ footer a#back_to_top {
 
   .div-protagonista, .all-protagonistas {
     margin: 30px 0;
+  }
+
+  .biblioteca.sala .temas .book-lectura {
+    border-bottom: 1px solid;
+  }
+  .biblioteca.sala .temas .book-lectura a {
+    color: #000000;
+  }
+  .biblioteca.sala .temas .book-lectura:nth-child(3) {
+    border-top: none;
+  }
+  .biblioteca.sala .temas .book-lectura.col-1, .biblioteca.sala .temas .book-lectura.col-2 {
+    border-left: none;
+  }
+  .biblioteca.sala .temas .book-lectura.col-3 {
+    border-left: none;
+    border-right: none;
+  }
+  .biblioteca.sala .temas .book-lectura:nth-child(odd) {
+    border-right: 1px solid;
+    border-left: 1px solid;
+  }
+  .biblioteca.sala .temas .book-lectura:nth-child(even) {
+    border-right: 1px solid;
   }
 }
 @media (max-width: 1280px) {

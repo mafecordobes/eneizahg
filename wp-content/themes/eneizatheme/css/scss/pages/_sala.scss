@@ -15,6 +15,88 @@
         font-size: 3.2em;
     }
 
+    .publicacion {
+        min-height: 225px;
+
+        h4 {
+            text-align: center;
+        }
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+       
+        img {
+            max-width: 100%;
+            padding-top: 10px;
+        }
+
+        .content {
+            min-height: 185px;
+            border-left: 1px solid;
+            padding-top: 10px;
+            padding-right: 0;
+        }
+    }
+
+    .menu-sala {
+        list-style: none;
+        padding-top: 40px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+
+        li {
+            font-weight: bold;
+        }
+
+        li.busquedas {
+            font-weight: 400 !important;
+            padding-left: 20px;
+        }
+    }
+
+    .div-temas {
+        margin-top: 20px;
+    }
+
+    .temas {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        .book-lectura {
+            display: flex;
+            min-height: 225px;
+            border-bottom: 1px solid;
+            padding: 10px;
+
+            a {
+                color: $black;
+            }
+
+            &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+                border-top: 1px solid;
+            } 
+            &.col-1, &.col-2 {
+                border-left: 1px solid;
+            }
+            &.col-3 {
+                border-left: 1px solid;
+                border-right: 1px solid;
+            }
+
+          
+        }
+        .portada {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
 }
 
 .description-sala {
