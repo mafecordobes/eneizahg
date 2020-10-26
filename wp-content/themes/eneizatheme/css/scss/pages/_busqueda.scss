@@ -1,0 +1,37 @@
+.page-template-busqueda-libros {
+    .description {
+        font-size: 1.5em;
+    }
+
+    .book-busqueda {
+        padding-left: 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid;
+        padding-bottom: 20px; 
+        .portada {
+            text-align: center;
+            img {
+                max-width: 100%;
+                max-height: 150px;
+            }
+        }
+        .titulo {
+            white-space: pre-line;
+            font-size: 1.2em;
+        }
+        a {
+            color: $black;
+        }
+
+        &.autor {
+            font-size: 1.2em;
+        }
+    }
+
+    ul.categorias {
+        font-size: 2em;
+        a {
+            color: $black;
+        }
+    }
+}

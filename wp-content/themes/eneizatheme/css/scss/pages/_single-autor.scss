@@ -1,0 +1,31 @@
+.single-autor {
+    h4, .nombre {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .presentacion {
+        a {
+            color: $dark_grey;
+            text-decoration: underline;
+        }
+    }
+    .bibliografia {
+        margin-bottom: 30px;
+
+        p.title a {
+            color: $dark_grey;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        ul {
+            li a {
+                color: $dark_grey;
+            }
+        }
+    }
+
+    .name {
+        padding-top: 20px;
+    }
+}

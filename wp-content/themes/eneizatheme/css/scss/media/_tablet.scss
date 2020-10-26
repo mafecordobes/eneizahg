@@ -176,3 +176,15 @@ footer {
         }
     }
 }
+
+.single-libro .relacionados, 
+.single-autor .relacionados,
+.page-template-tesoro_baul .relacionados, 
+.page-template-biblioteca-virtual .relacionados, 
+.page-template-biblioteca-publica .relacionados, 
+.page-template-biblioteca-digital .relacionados{
+    display: block;
+    .relacionado-2 {
+        border-left: 1px solid;
+    }
+}

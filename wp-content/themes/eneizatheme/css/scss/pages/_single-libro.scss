@@ -1,6 +1,16 @@
-.single-libro {
-    .menu-top #menu-main li#menu-item-48 a{
-        font-weight: 600;
+.single-libro, .single-autor {
+    .menu-top #menu-main li#menu-item-48 {
+        a {
+            font-weight: 600;
+        }
+
+        .sub-menu li a{
+            font-weight: 400;
+
+            &:hover {
+                font-weight: 600;
+            }
+        }
     }
     
     .menu-top #menu-main li#menu-item-47 a{

@@ -149,6 +149,9 @@ hr.line-light-comment {
 .menu-top #menu-main li.current-menu-ancestor, .menu-top #menu-main li.current-page-ancestor {
   font-weight: 600;
 }
+.menu-top #menu-main li.current-menu-ancestor .sub-menu li, .menu-top #menu-main li.current-page-ancestor .sub-menu li {
+  font-weight: 400;
+}
 .menu-top #menu-main .sub-menu {
   display: none;
   position: absolute;
@@ -1206,108 +1209,256 @@ hr.line-light-comment {
   display: none;
 }
 
-.single-libro .menu-top #menu-main li#menu-item-48 a {
+.single-libro .menu-top #menu-main li#menu-item-48 a, .single-autor .menu-top #menu-main li#menu-item-48 a {
   font-weight: 600;
 }
-.single-libro .menu-top #menu-main li#menu-item-47 a {
+.single-libro .menu-top #menu-main li#menu-item-48 .sub-menu li a, .single-autor .menu-top #menu-main li#menu-item-48 .sub-menu li a {
+  font-weight: 400;
+}
+.single-libro .menu-top #menu-main li#menu-item-48 .sub-menu li a:hover, .single-autor .menu-top #menu-main li#menu-item-48 .sub-menu li a:hover {
+  font-weight: 600;
+}
+.single-libro .menu-top #menu-main li#menu-item-47 a, .single-autor .menu-top #menu-main li#menu-item-47 a {
   font-weight: 400 !important;
 }
-.single-libro .cintillo {
+.single-libro .cintillo, .single-autor .cintillo {
   padding-top: 15px;
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
 }
-.single-libro .cintillo .lines {
+.single-libro .cintillo .lines, .single-autor .cintillo .lines {
   padding-left: 0;
   padding-right: 0;
 }
-.single-libro .cintillo hr.line {
+.single-libro .cintillo hr.line, .single-autor .cintillo hr.line {
   display: none;
 }
-.single-libro .cintillo hr.bold-line {
+.single-libro .cintillo hr.bold-line, .single-autor .cintillo hr.bold-line {
   margin-top: 15px;
   margin-bottom: 0;
   display: block;
 }
-.single-libro .description {
+.single-libro .description, .single-autor .description {
   padding-left: 0;
   text-align: justify;
 }
-.single-libro .description .img {
+.single-libro .description .img, .single-autor .description .img {
   text-align: left;
 }
-.single-libro .description .img img {
+.single-libro .description .img img, .single-autor .description .img img {
   max-width: 100%;
   padding-top: 23px;
 }
-.single-libro .description .titulo {
+.single-libro .description .titulo, .single-autor .description .titulo {
   white-space: pre-line;
   color: #000000;
   font-size: 1.2em;
   font-weight: bold;
 }
-.single-libro .description .titulo a {
+.single-libro .description .titulo a, .single-autor .description .titulo a {
   color: #000000;
 }
-.single-libro .main-container {
+.single-libro .main-container, .single-autor .main-container {
   padding-left: 0;
   padding-right: 0;
 }
-.single-libro .presentacion h4 {
+.single-libro .presentacion h4, .single-autor .presentacion h4 {
   font-weight: bold;
   text-align: justify;
   margin-top: 40px;
 }
-.single-libro .relacionados {
+.single-libro .relacionados, .single-autor .relacionados {
   margin-top: 30px;
   margin-bottom: 20px;
   display: flex;
   text-align: left;
 }
-.single-libro .relacionados .portada img {
+.single-libro .relacionados .portada img, .single-autor .relacionados .portada img {
   max-width: 100%;
   max-height: 200px;
 }
-.single-libro .relacionados .relacionado-1 {
+.single-libro .relacionados .relacionado-1, .single-autor .relacionados .relacionado-1 {
   border: 1px solid;
   padding: 10px;
   margin-bottom: 30px;
 }
-.single-libro .relacionados .relacionado-1 a {
+.single-libro .relacionados .relacionado-1 a, .single-autor .relacionados .relacionado-1 a {
   color: #000000;
 }
-.single-libro .relacionados .relacionado-2 {
+.single-libro .relacionados .relacionado-2, .single-autor .relacionados .relacionado-2 {
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-right: 1px solid;
   padding: 10px;
   margin-bottom: 30px;
 }
-.single-libro .relacionados .relacionado-2 a {
+.single-libro .relacionados .relacionado-2 a, .single-autor .relacionados .relacionado-2 a {
   color: #000000;
 }
-.single-libro .comments {
+.single-libro .comments, .single-autor .comments {
   margin-top: 20px;
 }
-.single-libro ul.menu-libro {
+.single-libro ul.menu-libro, .single-autor ul.menu-libro {
   list-style: none;
   padding-left: 0;
   padding-top: 20px;
   font-size: 1.2em;
 }
-.single-libro ul.menu-libro li {
+.single-libro ul.menu-libro li, .single-autor ul.menu-libro li {
   font-weight: bold;
   padding-bottom: 20px;
 }
-.single-libro ul.menu-libro li a {
+.single-libro ul.menu-libro li a, .single-autor ul.menu-libro li a {
   color: #000000;
   text-decoration: none;
 }
-.single-libro ul.menu-libro li.busquedas {
+.single-libro ul.menu-libro li.busquedas, .single-autor ul.menu-libro li.busquedas {
   padding-left: 10px;
   font-weight: 400 !important;
+}
+
+.page-template-tesoro_baul .cintillo, .page-template-biblioteca-virtual .cintillo, .page-template-biblioteca-publica .cintillo, .page-template-busqueda-libros .cintillo, .page-template-biblioteca-digital .cintillo {
+  padding-top: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.page-template-tesoro_baul .cintillo .lines, .page-template-biblioteca-virtual .cintillo .lines, .page-template-biblioteca-publica .cintillo .lines, .page-template-busqueda-libros .cintillo .lines, .page-template-biblioteca-digital .cintillo .lines {
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-template-tesoro_baul .cintillo hr.line, .page-template-biblioteca-virtual .cintillo hr.line, .page-template-biblioteca-publica .cintillo hr.line, .page-template-busqueda-libros .cintillo hr.line, .page-template-biblioteca-digital .cintillo hr.line {
+  display: none;
+}
+.page-template-tesoro_baul .cintillo hr.bold-line, .page-template-biblioteca-virtual .cintillo hr.bold-line, .page-template-biblioteca-publica .cintillo hr.bold-line, .page-template-busqueda-libros .cintillo hr.bold-line, .page-template-biblioteca-digital .cintillo hr.bold-line {
+  display: none;
+}
+.page-template-tesoro_baul ul.menu-libro, .page-template-biblioteca-virtual ul.menu-libro, .page-template-biblioteca-publica ul.menu-libro, .page-template-busqueda-libros ul.menu-libro, .page-template-biblioteca-digital ul.menu-libro {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+.page-template-tesoro_baul ul.menu-libro li, .page-template-biblioteca-virtual ul.menu-libro li, .page-template-biblioteca-publica ul.menu-libro li, .page-template-busqueda-libros ul.menu-libro li, .page-template-biblioteca-digital ul.menu-libro li {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.page-template-tesoro_baul ul.menu-libro li a, .page-template-biblioteca-virtual ul.menu-libro li a, .page-template-biblioteca-publica ul.menu-libro li a, .page-template-busqueda-libros ul.menu-libro li a, .page-template-biblioteca-digital ul.menu-libro li a {
+  color: #000000;
+  text-decoration: none;
+}
+.page-template-tesoro_baul ul.menu-libro li.busquedas, .page-template-biblioteca-virtual ul.menu-libro li.busquedas, .page-template-biblioteca-publica ul.menu-libro li.busquedas, .page-template-busqueda-libros ul.menu-libro li.busquedas, .page-template-biblioteca-digital ul.menu-libro li.busquedas {
+  padding-left: 10px;
+  font-weight: 400 !important;
+}
+.page-template-tesoro_baul .content, .page-template-biblioteca-virtual .content, .page-template-biblioteca-publica .content, .page-template-busqueda-libros .content, .page-template-biblioteca-digital .content {
+  padding-left: 0;
+}
+.page-template-tesoro_baul .description, .page-template-biblioteca-virtual .description, .page-template-biblioteca-publica .description, .page-template-busqueda-libros .description, .page-template-biblioteca-digital .description {
+  padding-top: 20px;
+  text-align: justify;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.page-template-tesoro_baul .book-tesoro, .page-template-biblioteca-virtual .book-tesoro, .page-template-biblioteca-publica .book-tesoro, .page-template-busqueda-libros .book-tesoro, .page-template-biblioteca-digital .book-tesoro {
+  margin-bottom: 30px;
+}
+.page-template-tesoro_baul .book-tesoro .titulo p, .page-template-biblioteca-virtual .book-tesoro .titulo p, .page-template-biblioteca-publica .book-tesoro .titulo p, .page-template-busqueda-libros .book-tesoro .titulo p, .page-template-biblioteca-digital .book-tesoro .titulo p {
+  font-size: 1.2em;
+  white-space: pre-line;
+}
+.page-template-tesoro_baul .book-tesoro .titulo a, .page-template-biblioteca-virtual .book-tesoro .titulo a, .page-template-biblioteca-publica .book-tesoro .titulo a, .page-template-busqueda-libros .book-tesoro .titulo a, .page-template-biblioteca-digital .book-tesoro .titulo a {
+  font-size: 1em;
+  white-space: pre-line;
+  color: #000000;
+  text-decoration: none;
+}
+.page-template-tesoro_baul .relacionados, .page-template-biblioteca-virtual .relacionados, .page-template-biblioteca-publica .relacionados, .page-template-busqueda-libros .relacionados, .page-template-biblioteca-digital .relacionados {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: left;
+}
+.page-template-tesoro_baul .relacionados .portada img, .page-template-biblioteca-virtual .relacionados .portada img, .page-template-biblioteca-publica .relacionados .portada img, .page-template-busqueda-libros .relacionados .portada img, .page-template-biblioteca-digital .relacionados .portada img {
+  max-width: 100%;
+  max-height: 200px;
+}
+.page-template-tesoro_baul .relacionados .relacionado-1, .page-template-biblioteca-virtual .relacionados .relacionado-1, .page-template-biblioteca-publica .relacionados .relacionado-1, .page-template-busqueda-libros .relacionados .relacionado-1, .page-template-biblioteca-digital .relacionados .relacionado-1 {
+  border: 1px solid;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.page-template-tesoro_baul .relacionados .relacionado-1 a, .page-template-biblioteca-virtual .relacionados .relacionado-1 a, .page-template-biblioteca-publica .relacionados .relacionado-1 a, .page-template-busqueda-libros .relacionados .relacionado-1 a, .page-template-biblioteca-digital .relacionados .relacionado-1 a {
+  color: #000000;
+}
+.page-template-tesoro_baul .relacionados .relacionado-2, .page-template-biblioteca-virtual .relacionados .relacionado-2, .page-template-biblioteca-publica .relacionados .relacionado-2, .page-template-busqueda-libros .relacionados .relacionado-2, .page-template-biblioteca-digital .relacionados .relacionado-2 {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.page-template-tesoro_baul .relacionados .relacionado-2 a, .page-template-biblioteca-virtual .relacionados .relacionado-2 a, .page-template-biblioteca-publica .relacionados .relacionado-2 a, .page-template-busqueda-libros .relacionados .relacionado-2 a, .page-template-biblioteca-digital .relacionados .relacionado-2 a {
+  color: #000000;
+}
+
+.page-template-busqueda-libros .description {
+  font-size: 1.5em;
+}
+.page-template-busqueda-libros .book-busqueda {
+  padding-left: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+}
+.page-template-busqueda-libros .book-busqueda .portada {
+  text-align: center;
+}
+.page-template-busqueda-libros .book-busqueda .portada img {
+  max-width: 100%;
+  max-height: 150px;
+}
+.page-template-busqueda-libros .book-busqueda .titulo {
+  white-space: pre-line;
+  font-size: 1.2em;
+}
+.page-template-busqueda-libros .book-busqueda a {
+  color: #000000;
+}
+.page-template-busqueda-libros .book-busqueda.autor {
+  font-size: 1.2em;
+}
+.page-template-busqueda-libros ul.categorias {
+  font-size: 2em;
+}
+.page-template-busqueda-libros ul.categorias a {
+  color: #000000;
+}
+
+.single-autor h4, .single-autor .nombre {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.single-autor .presentacion a {
+  color: #2e3131;
+  text-decoration: underline;
+}
+.single-autor .bibliografia {
+  margin-bottom: 30px;
+}
+.single-autor .bibliografia p.title a {
+  color: #2e3131;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.single-autor .bibliografia ul li a {
+  color: #2e3131;
+}
+.single-autor .name {
+  padding-top: 20px;
 }
 
 footer {
@@ -1515,6 +1666,23 @@ footer a#back_to_top {
   }
   .biblioteca.sala .temas .book-lectura:nth-child(3), .biblioteca.sala .temas .book-lectura:nth-child(2) {
     border-top: none;
+  }
+
+  .single-libro .relacionados,
+.single-autor .relacionados,
+.page-template-tesoro_baul .relacionados,
+.page-template-biblioteca-virtual .relacionados,
+.page-template-biblioteca-publica .relacionados,
+.page-template-biblioteca-digital .relacionados {
+    display: block;
+  }
+  .single-libro .relacionados .relacionado-2,
+.single-autor .relacionados .relacionado-2,
+.page-template-tesoro_baul .relacionados .relacionado-2,
+.page-template-biblioteca-virtual .relacionados .relacionado-2,
+.page-template-biblioteca-publica .relacionados .relacionado-2,
+.page-template-biblioteca-digital .relacionados .relacionado-2 {
+    border-left: 1px solid;
   }
 }
 @media (max-width: 992px) {

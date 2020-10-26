@@ -28,7 +28,7 @@ $books = get_posts(
         'tax_query' => array(
             array(
                 'taxonomy' => 'accesos',
-                'field' => 'term_id',
+                'field' => 'slug',
                 'terms' => 'sala-de-lectura',
             )
         )
@@ -78,11 +78,10 @@ $books = get_posts(
             <li><a href="/biblioteca">Menú principal</a></li>
             <li><a href="/biblioteca/#nuestras-condiciones">Nuestras condiciones</a></li>
             <li>Búsqueda</li>
-            <li class="busquedas"><a href="#">Por título</a></li>
-            <li class="busquedas"><a href="#">Por tema</a></li>
-            <li class="busquedas"><a href="#">Por autor</a></li>
+            <li class="busquedas"><a href="/biblioteca/busqueda/?search=titulo">Por título</a></li>
+            <li class="busquedas"><a href="/biblioteca/busqueda/?search=autor">Por autor</a></li>
             <li class="busquedas"><a href="#">Por ejes de contenido</a></li>
-            <li class="busquedas"><a href="#">Por categoría de acceso</a></li>
+            <li class="busquedas"><a href="/biblioteca/busqueda/?search=categorias">Por categoría de acceso</a></li>
         </div>
     </div>
 

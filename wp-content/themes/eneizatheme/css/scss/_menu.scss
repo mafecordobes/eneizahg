@@ -25,6 +25,9 @@
 
             &.current-menu-ancestor, &.current-page-ancestor {
                 font-weight: 600;
+                .sub-menu li {
+                    font-weight: 400;
+                }
             }
         }
     
