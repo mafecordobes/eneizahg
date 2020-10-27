@@ -1,6 +1,7 @@
-<?php /* Template Name: Contacto */ 
+<?php /* Template Name: Solicitud de Servicio */ 
 get_header();
 get_template_part( 'template-parts/top', 'cintillo' );
+$description = get_field('descripcion');
 $telefono = get_field('telefono');
 $direccion = get_field('direccion');
 $correo = get_field('correo');
@@ -11,8 +12,9 @@ $maps = get_field('enlace_google_maps');
         <?php get_template_part( 'template-parts/menu', 'left' ); ?> 
     </div>
     <div class="col-md-10 content contact">
-        <h5 class="subtitle">Contacto</h5>
-        <?php echo do_shortcode( '[contact-form-7 id="8" title="Contact form 1"]' ); ?>
+        <h5 class="subtitle">Solicitud de servicio</h5>
+        <div class="description-solicitud"><?php echo $description; ?></div>
+        <?php echo do_shortcode( '[contact-form-7 id="489" title="Solicitud de Servicio"]' ); ?>
         <ul class="social-contact">
             <li>
                 <a href="tel:<?php echo trim(str_replace(' ', '', str_replace('-', '', $telefono))); ?>">

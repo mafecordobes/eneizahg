@@ -1,0 +1,41 @@
+.menu-left-services {
+    .menu-left .menu {
+        padding-left: 0;
+        padding-top: 5px;
+        li {
+            list-style: none;
+            padding-bottom: 5px;
+        }
+    }
+
+    h6 {
+        font-size: 1.3em;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    ul.menu-tce {
+        list-style: none;
+        padding-left: 0;
+        font-size: 1.15em;
+        li {
+            list-style: none;
+            padding-bottom: 5px;
+            a {
+                color: $dark_grey; 
+                text-decoration: none;
+            }
+
+            &:hover a{
+                font-weight: 600;
+            }
+        }
+    }
+} 
+
+.fortalecimiento-de-capacidades {
+    padding-top: 10px;
+    h4.title {
+        margin-top: 0;
+    }
+}

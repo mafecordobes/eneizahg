@@ -133,7 +133,7 @@
         li {
             list-style: none;
             padding-bottom: 30px;
-            &.current-menu-ancestor, &.current-menu-item {
+            &.current-menu-ancestor, &.current-menu-item, &.current-page-ancestor {
                 a {
                     font-weight: 600;
                 }

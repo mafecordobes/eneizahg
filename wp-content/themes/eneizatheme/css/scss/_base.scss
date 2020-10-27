@@ -143,3 +143,21 @@ hr.line-light-comment {
         margin: 0 auto;
     }
 }
+
+.description-solicitud {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.foro-abierto h5.subtitle {
+    font-size: 3em;
+    font-weight: 600;
+    color: $light_grey;
+}
+
+select.wpcf7-form-control.wpcf7-select {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
