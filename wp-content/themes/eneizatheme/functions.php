@@ -184,3 +184,63 @@ function register_read_space(){
     exit;
 
 }
+
+function my_admin_menu() {
+    add_menu_page(
+        __( 'Sala de Lectura', 'my-textdomain' ),
+        __( 'Sala de Lectura', 'my-textdomain' ),
+        'manage_options',
+        'sample-page',
+        'my_admin_page_contents',
+        'dashicons-edit-page',
+        29
+    );
+}
+
+add_action( 'admin_menu', 'my_admin_menu' );
+
+
+function my_admin_page_contents() {
+    global $wpdb;
+
+    $usuarios = $wpdb->get_results("SELECT * FROM users_sala_lectura GROUP BY mail");
+
+    ?>
+        <style>
+            table tr th {
+                text-align: left;
+                font-size: 15px;
+            }  
+            table tr td {
+                text-align: left;
+                font-size: 15px;
+            }  
+            table tr:nth-child(even) {
+               background: #dddddd;
+            } 
+            table tr:nth-child(odd) {
+               background: white;
+            } 
+            table tr {
+                height: 45px;
+            }
+        </style>
+        <h1>
+            <?php esc_html_e( 'Usuarios registrados en la sala de lectura', 'my-plugin-textdomain' ); ?>
+        </h1>
+        <table style="width:95%">
+            <tr>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
+                <th>Fecha del registro</th>
+            </tr>
+        <?php foreach($usuarios as $user): ?>
+                <tr>
+                    <td><?php echo $user->name; ?></td>
+                    <td><?php echo $user->mail; ?></td>
+                    <td><?php echo $user->created_at; ?></td>
+                </tr>
+        <?php endforeach?>
+        </table>
+    <?php
+}
