@@ -17,7 +17,8 @@ $introduccion = get_field('introduccion');
 $contenido = get_field('contenido');
 
 $introduccion_biblioteca = get_field('introduccion_biblioteca');
-$bio = get_field('bio');
+$biblioteca = get_field('¿enlazar_biografia_a_biblioteca');
+$bio = get_permalink(get_field('bio')->ID);
 
 $trabajos = get_field('trabajos_realizados');
 
@@ -66,6 +67,14 @@ $trabajos = get_field('trabajos_realizados');
 
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 biblioteca content">
             <?php echo $introduccion_biblioteca; ?>
+            <?php if($biblioteca): ?>
+                <p><b><a href="<?php echo $bio; ?>">Click aquí para conectar con biblioteca</a></b></p>
+            <?php endif; ?>
+            
+        </div>
+
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 contenido content">
+            <?php echo $trabajos; ?>
         </div>
     </div>
 </div>
